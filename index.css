@@ -17,6 +17,14 @@ li {
     display: flex;
     justify-content: flex-end;
 }
+#social {
+    text-decoration: none;
+    transition: 2s text-transform;
+}
+a:hover {
+    opacity: 60%;
+    transform: translateY(0) scale(1.2);
+}
 
 #webpage-content {
     writing-mode: vertical-lr;
