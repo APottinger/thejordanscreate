@@ -28,7 +28,7 @@ a:hover {
 
 #webpage-content {
     writing-mode: vertical-lr;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 2rem;
 }
@@ -36,5 +36,18 @@ a:hover {
 #p {
     position: relative;
     top: 0%;
+}
+#input {
+    display: flex;
+    flex-direction: row-reverse;
+    border-style: none;
+    margin: 1rem;
+}
+#input:focus {
+    border-color: white;
+    outline: none;
+}
 
+#submit {
+    border-style: none;
 }
