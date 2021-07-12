@@ -8,3 +8,8 @@ firstHeader.addEventListener('click', ()=> {
     `
 })
 
+
+let emailSub = document.querySelector('#emailSub').addEventListener('submit', (e)=> {
+    e.preventDefault()
+    alert('Subscribed!')
+})
