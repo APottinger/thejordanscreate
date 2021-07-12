@@ -40,14 +40,26 @@ a:hover {
 #input {
     display: flex;
     flex-direction: row-reverse;
-    border-style: none;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+    width: 15%;
     margin: 1rem;
+    color: #007bff;
 }
 #input:focus {
-    border-color: white;
+    border-top: white;
+    border-right: white;
+    border-left: white;
     outline: none;
+    margin: 1rem;
+    padding: 1rem;
+    color: #007bff;
 }
 
 #submit {
     border-style: none;
+    height: 3rem;
+    margin-top: 0.70rem;
 }
+
