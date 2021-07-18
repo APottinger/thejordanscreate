@@ -63,3 +63,14 @@ a:hover {
     margin-top: 0.70rem;
 }
 
+.container {
+    height: 50rem;
+    display: flex;
+}
+
+iframe {
+    background-color: blue;
+    box-shadow: 10px 20px 5px gray;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
