@@ -77,3 +77,37 @@ iframe {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+
+.slide {
+    position: relative;
+    transform: translateX(-50rem);
+    opacity: 0 !important; 
+    transition: all 2s ease;
+}
+.sliding{
+    transform: translateX(0);
+    opacity: 1 !important;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.transition2{
+    transform: translateX(40rem);
+    opacity: 0%;
+    transition: 2s ease;
+    transition-delay: 0.75s;
+}
+.transition2-active {
+    transform: translateX(0);
+    opacity: 0.15;
+}
