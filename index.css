@@ -104,10 +104,22 @@ iframe {
 .transition2{
     transform: translateX(40rem);
     opacity: 0%;
-    transition: 2s ease;
-    transition-delay: 0.75s;
+    transition: 2s ease-in-out;
+    transition-delay: 0.5s;
 }
 .transition2-active {
     transform: translateX(0);
     opacity: 0.15;
+}
+.titles {
+    opacity: 0;
+    transform: translateX(-25rem);
+    transition: 2s ease;
+}
+.transition3 {
+    opacity: 0.15;
+    transform: translateX(0);
+}
+img {
+    border-radius: 50%;
 }
