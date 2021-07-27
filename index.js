@@ -72,12 +72,30 @@ function slide() {
         }
     }
 }
-window.addEventListener('DOMContentLoaded', transition2)
+
+window.addEventListener('load', transition2)
 
 function transition2() {
-    let slips = document.querySelector('.transition2')
-    slips.classList.add('transition2-active')
+    let t2 = document.querySelector('.transition2')
+    t2.classList.add('transition2-active')
 }
+
+window.onscroll = function(){
+    let titles = document.querySelectorAll('.titles')
+    
+    for(let i = 0; i <titles.length; i++) {
+        let windowHeight = window.innerHeight
+        let titleTop = titles[i].getBoundingClientRect().top
+        let titlePoint = 150
+
+        if (titleTop < windowHeight - titlePoint) {
+            titles[i].classList.add('transition3')
+        }else {
+            titles[i].classList.remove('transition3')
+        }
+    }
+}
+
 
 
 
